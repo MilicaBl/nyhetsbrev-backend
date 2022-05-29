@@ -1,0 +1,43 @@
+GET http://localhost:3000/admin
+
+###
+
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{
+    "userName":"eeeeeeee",
+    "password":"haj",
+    "email":"jeeee@email.com",
+    "age":26,
+    "prenumeration":false
+}
+
+###
+
+PUT http://localhost:3000/register
+Content-Type: application/json
+
+{
+    "_id":"62907d63eb0e7b5d7c7266e4"
+}
+
+
+###
+DELETE http://localhost:3000/register/628d5729a5d20d49be899394
+
+###
+
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "userName":"haj",
+    "password":"haj"
+}
+
+###
+
+GET http://localhost:3000/login/6291fb5f07f17e849ea5644c
+Content-Type: application/json
+
