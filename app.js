@@ -80,7 +80,7 @@ function checkNotAuthenticated(req, res, next) {
 async function init() {
   try {
     const options = { useNewUrlParser: true, useUnifiedTopology: true };
-    mongoose.connect(
+    await mongoose.connect(
       `mongodb+srv://milab:${process.env.MONGO_PASSWORD}@cluster0.uz16p.mongodb.net/?retryWrites=true&w=majority`,
       options
     );
